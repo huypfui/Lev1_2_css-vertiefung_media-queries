@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header styles */
+
+.header {
+    background-color: aqua;
+    width: 100vw;
+    height: 10vh;
+    text-align: center;
+    padding: 4vh 0;
+}
+
+/* Main Styles */
+
+main section {
+    display: flex;
+    width: 100vw;
+}
+
+section div {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+div article {
+    width: 40vw;
+    text-align: center;
+    padding: 4vh 0vw;
+    margin: 1vh 0vw;
+}
+
+
+section .aside {
+    background-color: plum;
+    width: 30vw;
+    text-align: center;
+    padding: 9vh 0;
+    margin: 1vh 1vw;
+}
+
+main section .article1 {
+    background-color: seagreen;
+}
+main section .article2 {
+    background-color: orange;
+}
+main section .article3 {
+    background-color: pink;
+}
+main section .article4 {
+    background-color: greenyellow;
+}
+
+/* Footer Styles */
+
+.footer {
+    background-color: mediumaquamarine;
+    width: 100vw;
+    height: 10vh;
+    text-align: center;
+    padding: 4vh 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) { 
+    .aside {
+        width: 100%;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    div {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) { 
+    .article1, .article2, .article3, .article4 {
+        width: 100%;
+    }
+}
